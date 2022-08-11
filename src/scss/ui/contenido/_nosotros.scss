@@ -1,0 +1,28 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.nosotros {
+    padding: 2rem 0;
+    &__heading {
+        @include m.heading;
+    }
+    &__grid {
+        margin-top: 2rem;
+        @include m.tablet {
+            @include m.grid(3, 2rem);
+        }
+    }
+    &__bloque {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__bloque-heading {
+        margin: 1rem 0;
+    }
+    &__bloque-texto {
+        text-align: center;
+        margin: 1rem 0;
+    }
+}
